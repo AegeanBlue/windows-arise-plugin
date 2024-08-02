@@ -1,6 +1,7 @@
 import webbrowser
 import os
 import json
+import time
 
 def user_options():
      user_input = input('>>> Type \"1\" if you want to replace links. Type  \"2\" if you want to open links. Type  \"3\" if you want to replace links and open them: ')
@@ -17,6 +18,8 @@ def user_links():
     return links_list
 
 def windows_arise(some_links):
+        os.startfile("C:/ProgramData/Microsoft/Windows/Start Menu/Programs/firefox")
+        time.sleep(0.5)
         for url in some_links:
             
             if url.startswith('https'):
